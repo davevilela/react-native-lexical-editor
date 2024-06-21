@@ -24,7 +24,6 @@ export function Toolbar() {
     try {
       if (WebBridgeMethods.current.isReady) {
         const res = await WebBridgeMethods.current.getEditorJson();
-        console.log(res, "aaaaaaaaaaaaa");
         await WebBridgeMethods.current.formatElementCommand(fmt);
       }
     } catch (e) {
